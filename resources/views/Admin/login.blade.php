@@ -83,12 +83,16 @@
                 dataType:"json",
                 type:"post",
                 success:function (msg) {
-                   if(msg==1){
-                       alert('管理员用户名或密码有误');
-                   }else if(msg==2){
-                       alert('登录成功');
-                       location.href = '/admin_index';
-                   }
+                    if(msg==1){
+                        alert('管理员用户名或密码有误');
+                    }else if(msg==2){
+                        alert('登录成功');
+                        location.href = '/admin_index';
+                    }else if(msg==3){
+                        alert('密码不能为空');
+                    }else if(msg==4){
+                        alert('用户名不能为空');
+                    }
                 }
             })
         })

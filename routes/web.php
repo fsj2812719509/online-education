@@ -50,15 +50,15 @@ Route::any('/Supdatedo','Admin\SpecialController@Supdatedo')->middleware('login'
 
 
 //课程
-Route::any('/classadd','Admin\ClassController@classadd');//后台课程添加页面
-Route::any('/classadddo','Admin\ClassController@classadddo');//后台课程添加执行页面
-Route::any('/classlist','Admin\ClassController@classlist');//后台课程未审核列表展示页面
-Route::any('/classpass','Admin\ClassController@classpass');//后台课程通过系统
-Route::any('/classstop','Admin\ClassController@classstop');//后台课程驳回系统
-Route::any('/classlister','Admin\ClassController@classlister');//后台审核课程通过的列表页
-Route::any('/classdel','Admin\ClassController@classdel');//后台审核课程通过的列表页删除
-Route::any('/classupd','Admin\ClassController@classupd');//后台审核课程通过的列表页修改
-Route::any('/classupddo','Admin\ClassController@classupddo');//后台审核课程通过的列表页修改执行
+Route::any('/classadd','Admin\ClassController@classadd')->middleware('login');//后台课程添加页面
+Route::any('/classadddo','Admin\ClassController@classadddo')->middleware('login');//后台课程添加执行页面
+Route::any('/classlist','Admin\ClassController@classlist')->middleware('login');//后台课程未审核列表展示页面
+Route::any('/classpass','Admin\ClassController@classpass')->middleware('login');//后台课程通过系统
+Route::any('/classstop','Admin\ClassController@classstop')->middleware('login');//后台课程驳回系统
+Route::any('/classlister','Admin\ClassController@classlister')->middleware('login');//后台审核课程通过的列表页
+Route::any('/classdel','Admin\ClassController@classdel')->middleware('login');//后台审核课程通过的列表页删除
+Route::any('/classupd','Admin\ClassController@classupd')->middleware('login');//后台审核课程通过的列表页修改
+Route::any('/classupddo','Admin\ClassController@classupddo')->middleware('login');//后台审核课程通过的列表页修改执行
 
 
 

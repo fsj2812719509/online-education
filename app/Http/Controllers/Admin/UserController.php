@@ -22,6 +22,7 @@ class UserController extends Controller
         $a_level = $request->post('a_level');
 
         $a_pwd = $request->post('a_pwd');
+
         $a_time = time();
         if($a_name==''){
             return 1;//用户名不能为空
@@ -53,7 +54,7 @@ class UserController extends Controller
                 'a_pwd'=>$a_pwd,
                 'a_level'=>$a_level,
                 'a_time'=>$a_time,
-                'a_status'=>1
+                'status'=>1
             ];
 
             $sql = AdminsModel::insert($data);

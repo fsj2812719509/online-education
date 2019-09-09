@@ -10,4 +10,7 @@ class LoginController extends Controller
     public function login(){
         return view('Index.login');
     }
+
+    //登录
+
 }

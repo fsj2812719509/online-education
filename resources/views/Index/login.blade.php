@@ -38,10 +38,14 @@
 
             <form action="#" method="get" class="subscribe-form">
                 <div class="row form-section">
-
                     <div class="col-md-7 col-sm-7 col-xs-7">
-                        <input name="email" type="text" class="form-control" id="contact_email" placeholder="Your Email..." required/>
+                        <input name="email" type="text" class="form-control" id="contact_email" placeholder="昵称..." required/>
                     </div>
+                    <br><br>
+                    <div class="col-md-7 col-sm-7 col-xs-7">
+                        <input name="email" type="password" class="form-control" id="contact_email" placeholder="密码..." required/>
+                    </div>
+                    <br><br>
                     <div class="col-md-5 col-sm-5 col-xs-5">
                         <button type="submit" class="tm-btn-subscribe">Subscribe</button>
                     </div>

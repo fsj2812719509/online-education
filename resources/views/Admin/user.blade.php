@@ -19,7 +19,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">电话</label>
-                        <input type="password" class="form-control" id="a_tel" placeholder="Password">
+                        <input type="text" class="form-control" id="a_tel" placeholder="Password">
                     </div>
 
                     管理员权限<div class="col-md-6">
@@ -100,6 +100,7 @@
                             alert('管理员权限不能为空');
                         }else if(msg==6){
                             alert('管理员添加成功');
+                            location.href="AdminUserList";
                         }else if(msg==7){
                             alert('管理员添加失败');
                         }else if(msg==8){

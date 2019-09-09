@@ -40,7 +40,7 @@
                 <img src="img/logo.png" alt="">
             </a>
             <div class="user-panel">
-                <a href="#">Login</a><span>/</span><a href="">Register</a>
+                <a href="index_login">Login</a><span>/</span><a href="">Register</a>
             </div>
             <div class="nav-switch">
                 <i class="fa fa-bars"></i>
